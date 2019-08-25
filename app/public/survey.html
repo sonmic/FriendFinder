@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Friend Finder">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://sonmic.github.io/FriendFinder/">
+    <link rel="shortcut icon" type="image/png" href="" />
+    <title>Friend Finder</title>
+    
+    <!-- Linking Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="themes/bars-pill.css">
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Bubbler+One|Julius+Sans+One|Montserrat+Subrayada|Notable|Syncopate&display=swap" rel="stylesheet">
+    <!-- Linking jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Linking jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.barrating.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="headline">Survey Questions</div>
+        <div class="aboutYou">About You</div>
+
+
+
+        <form id="answers">
+
+            <div class="form-group bmd-form-group">
+                <!-- manually specified -->
+                <label for="nameInput" class="bmd-label-floating">Your Name (Required)</label>
+                <input type="text" class="form-control" name="name" id="nameInput" required="required">
+            </div>
+            <div class="form-group bmd-form-group">
+                <!-- manually specified -->
+                <label for="destinationInput" class="bmd-label-floating">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" name="link" id="photoUrl" required="required">
+            </div>
+           
+
+            <div class="q1">
+                <p>Is cereal soup?</p>
+                <select id="q1" name="q1" class="question">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+            </div>
+            <div class="q2">
+                <p>Is a hotdog a sandwich?</p>
+                <select id="q2" name="q2" class="question">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            </div>
+            <div class="q3">
+                <p>Is chess a sport?</p>
+                <select id="q3" name="q3" class="question">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+            </div>
+            <div class="q4">
+                <p>Is the spring the best season?</p>
+                <select id="q4" name="q4" class="question">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+            </div>
+            <div class="q5">
+                <p>Do you have free will?</p>
+                <select id="q5" name="q5" class="question">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+            </div>
+            <div class="q6">
+                <p>Are race car drivers athletes?</p>
+                <select id="q6" name="q6" class="question">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+            </div>
+            <div class="q7">
+                <p>Is cheesecake actually cheese pie?</p>
+                <select id="q7" name="q7" class="question">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+            </div>
+            <div class="q8">
+                <p>If tomatoes are fruit, is ketchup a smoothie?</p>
+                <select id="q8" name="q8" class="question">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+            </div>
+            <div class="q9">
+                <p>Are poptarts ravioli?</p>
+                <select id="q9" name="q9" class="question">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+            </div>
+            <div class="q10">
+                <p>Is water wet?</p>
+                <select id="q10" name="q10" class="question">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+            </div>
+
+            <div class="submit">
+                <button type="submit" class="btn btn-raised">Submit</button>
+            </div>
+        </form>
+
+        
+
+
+    </div>
+    <form action="/">
+        <button type="submit" class="btn btn-raised">Home</button>
+    </form>
+
+    <script type="text/javascript " src="app.js"></script>
+</body>
+
+</html>

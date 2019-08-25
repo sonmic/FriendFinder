@@ -1,0 +1,75 @@
+/* 
+font-family: 'Abel', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Bubbler One', sans-serif;
+font-family: 'Notable', sans-serif;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Julius Sans One', sans-serif; 
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fae9ea;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+.container {
+    padding-top: 20%;
+    vertical-align: middle;
+}
+
+.title {
+    font-size: 60px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.mean {
+    position: absolute;
+    top: -500px;
+    left: -500px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.box-example-movie .br-wrapper {
+    width: 250px;
+    position: absolute;
+    margin: 0px 0 0 -125px;
+    left: 50%;
+}
+
+.custom-file-control,
+.form-control,
+.is-focused .custom-file-control,
+.is-focused .form-control {
+    background-image: linear-gradient(0deg, #fbb426 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0)!important;
+    /* border-bottom: 1px solid #fbb426 !important; */
+    /* box-shadow: 0 1px 0 0 #fbb426 !important; */
+}
+
+.is-focused [class*=" bmd-label"],
+.is-focused [class^=bmd-label] {
+    color: #ff8500 !important;
+}
+
+ /* Box shadow color */
+        
+ ::selection {
+    background: #fcffff;
+    /* WebKit/Blink Browsers */
+}
+
+ ::-moz-selection {
+    background: #fcffff;
+    /* Gecko Browsers */
+}
+
