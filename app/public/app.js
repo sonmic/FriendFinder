@@ -13,8 +13,7 @@ $(function() {
     initialRating: "1",
     showValues: true,
     showSelectedRating: false,
-    allowEmpty: true,
-    emptyValue: "-- no rating selected --"
+    allowEmpty: false
   });
 
   $("#answers").on("submit", function(event) {
@@ -35,6 +34,9 @@ $(function() {
       dataType: "json",
       success: function(data) {
         console.log("Did it", data);
+        $("#friendName").text(data.name);
+        $("#friendPhoto").attr("src", data.photo);
+        $("#popup").modal();
       }
     });
   });
