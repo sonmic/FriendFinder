@@ -10,31 +10,49 @@
     <meta property="og:url" content="https://sonmic.github.io/FriendFinder/">
     <link rel="shortcut icon" type="image/png" href="" />
     <title>Friend Finder</title>
-    <!-- Bootstrap CDN -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+     <!-- Linking Material Design Bootstrap CSS-->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+     crossorigin="anonymous">
+
+
     <!-- Linking CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="themes/bars-pill.css">
 
     <!-- Linking Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abel|Bubbler+One|Julius+Sans+One|Montserrat+Subrayada|Notable|Syncopate&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Bubbler+One|Julius+Sans+One|Notable|Syncopate&display=swap"
+      rel="stylesheet">
+     
     <!-- Linking jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- Linking jQuery UI-->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+  
 </head>
 
 <body>
     <div class="container">
 
         <div class="title">
-            <div class="meanLink">Friend Finder<img class="mean" src="meangirl.jpg" height="200" width="350" /></div>
+            <div class="meanLink"><a href="survey"> Friend Finder</a><img class="mean" src="meangirl.jpg" height="200" width="350" /></div>
         </div>
-        <p class="desc">Answer a few basic questions. <br> Then find the friend with the greatest compatibility!</p>
-        <div class="go"> <a href="survey"> Go to Survey </a> </div>
+        <p class="desc">Answer a few basic questions. <br> Then find the friend with the greatest compatibility! </p>
+        
+        <div class="go"> <a href="survey" class="onHover">GO TO SURVEY</div></a>
     </div>
 
-    <script type="text/javascript " src="../data/friends.js "></script>
+    <script>
+       $(".meanLink").on("mouseenter mousemove", function(e) {
+            $(".mean").css("top", e.clientY + 15);
+            $(".mean").css("left", e.clientX + 15);
+       });
+       $(".meanLink").on("mouseleave", function(e) {
+            $(".mean").css("top", -500);
+            $(".mean").css("left", -500);
+       });
+    </script>
 </body>
 
 </html>

@@ -1,11 +1,3 @@
-$(".meanLink").on("mouseenter mousemove", function(e) {
-  $(".mean").css("top", e.clientY + 15);
-  $(".mean").css("left", e.clientX + 15);
-});
-$(".meanLink").on("mouseleave", function(e) {
-  $(".mean").css("top", -500);
-  $(".mean").css("left", -500);
-});
 
 $(function() {
   $(".question").barrating("show", {

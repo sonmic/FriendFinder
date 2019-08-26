@@ -1,11 +1,14 @@
 /* 
 font-family: 'Abel', sans-serif;
-font-family: 'Montserrat Subrayada', sans-serif;
 font-family: 'Bubbler One', sans-serif;
 font-family: 'Notable', sans-serif;
 font-family: 'Syncopate', sans-serif;
 font-family: 'Julius Sans One', sans-serif; 
 */
+.title {
+    font-size: 60px;
+    font-family: 'Syncopate', sans-serif;
+}
 
 html {
     height: 100%;
@@ -19,7 +22,7 @@ body {
 }
 
 .container {
-    padding-top: 20%;
+    padding-top: 18%;
     vertical-align: middle;
     text-align: center;
 }
@@ -34,11 +37,6 @@ body {
     margin: auto;
 }
 
-.title {
-    font-size: 60px;
-    font-family: 'Syncopate', sans-serif;
-}
-
 .mean {
     position: absolute;
     top: -500px;
@@ -47,7 +45,7 @@ body {
 
 
 .headline{
-    font-size: 40px;
+    font-size: 30px;
 }
 .aboutYou{
     font-size: 30px;
@@ -56,6 +54,13 @@ body {
     font-size: 15px;
     color: #a2a2a2;
 }
+
+
+.go,
+button.submit{
+    font-size: 20px;
+}
+
 
 i{
     color:#aeaeae;
@@ -78,13 +83,13 @@ a:visited {
 .form-control,
 .is-focused .custom-file-control,
 .is-focused .form-control {
-    background-image: linear-gradient(0deg, #e7252b 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0)!important;
+    background-image: linear-gradient(0deg, #ef6b80 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0)!important;
     display:inline-block;
 }
 
 .is-focused [class*=" bmd-label"],
 .is-focused [class^=bmd-label] {
-    color: #e7252b !important;
+    color: #ef6b80 !important;
 }
 
  /* Box shadow color */
@@ -117,7 +122,8 @@ a:visited {
     padding: 15px;
 }
 
-a:hover,
+button.submit:hover,
+a.onHover:hover,
 #topBtn:hover {
     opacity: 0.5;
 }
