@@ -10,22 +10,26 @@
     <link rel="shortcut icon" type="image/png" href="" />
     <title>Friend Finder</title>
 
-    <!-- Linking Material Design Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
-      crossorigin="anonymous"
-    />
+    
+     <!-- Linking Material Design Bootstrap CSS-->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+     crossorigin="anonymous">
+
+
     <!-- Linking CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="themes/bars-pill.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="themes/bars-pill.css">
 
     <!-- Linking Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Abel|Bubbler+One|Julius+Sans+One|Montserrat+Subrayada|Notable|Syncopate&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
+       <!-- Linking Font Awesome 5 for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <!-- Linking jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Linking jQuery UI-->
@@ -33,42 +37,35 @@
     <script
       src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
       integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function() {
-        $("body").bootstrapMaterialDesign();
-      });
-    </script>
+      crossorigin="anonymous"></script>
+     <!-- Linking Font Awesome 5 for icons -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+     
   </head>
 
   <body>
-    <div class="container">
+    <div class="surveyContainer">
       <div class="headline">Survey Questions</div>
       <div class="aboutYou">About You</div>
-
+<div class="instructions">Answer a few basic questions.<br>
+        Then find the friend with the greatest compatibility!
+        </div>
       <form id="answers">
         <div class="form-group bmd-form-group">
           <!-- manually specified -->
-          <label for="nameInput" class="bmd-label-floating"
-            >Your Name (Required)</label
-          >
+          <i class="fa fa-user"></i><label for="nameInput" class="bmd-label-floating"
+            >Your Name (Required)</label>
           <input
             type="text"
             class="form-control"
             name="name"
             id="nameInput"
-            required="required"
-          />
+            required="required"/>
         </div>
         <div class="form-group bmd-form-group">
           <!-- manually specified -->
-          <label for="destinationInput" class="bmd-label-floating"
+          <i class="fa fa-camera"></i><label for="destinationInput" class="bmd-label-floating"
             >Link to Photo Image (Required)</label
           >
           <input
@@ -79,7 +76,8 @@
             required="required"
           />
         </div>
-
+        <div class="scale">Example - 1: Strongly disagree ...5: Strongly Agree.</div>
+<div class="qContainer">
         <div class="q1">
           <p>Is cereal soup?</p>
           <select id="q1" name="q1" class="question">
@@ -180,11 +178,17 @@
             <option value="5">5</option>
           </select>
         </div>
-
+        <br>
         <div class="submit">
-          <button type="submit" class="btn btn-raised">Submit</button>
-        </div>
-      </form>
+                <button type="submit" class="btn btn-raised">Submit</button>
+              </div>
+      
+              <form action="/">
+                  <button type="submit" class="btn btn-raised">Home</button>
+                </form>
+            </form>
+    </div>
+       
     </div>
     <div class="modal" tabindex="-1" role="dialog" id="popup">
       <div class="modal-dialog" role="document">
@@ -214,10 +218,26 @@
         </div>
       </div>
     </div>
-    <form action="/">
-      <button type="submit" class="btn btn-raised">Home</button>
-    </form>
-
+   
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <b>⌃</b>
+    </button>
     <script type="text/javascript" src="app.js"></script>
+
+     <!-- Linking Material Design BootstrapJS -->
+    <script
+    src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+
+
+        <!-- Initializing Material Design Bootstrap -->
+
+    <script>
+            $(document).ready(function() {
+              $("body").bootstrapMaterialDesign();
+            });
+          </script>
+
   </body>
 </html>
