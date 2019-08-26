@@ -26,8 +26,11 @@ body {
     text-align: center;
 }
 
+.modal-title,
+.modal-body,
 .qContainer{
     text-align: center;
+    margin: auto;
 }
 
 

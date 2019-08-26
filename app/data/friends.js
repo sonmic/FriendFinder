@@ -132,16 +132,16 @@ module.exports = [
       "name": "Larry",
       "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend9.jpg",
       "scores": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
       ]
     },
     {
