@@ -67,16 +67,16 @@ module.exports = [
       "name": "April Ritter",
       "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend5.jpg",
       "scores": [
-        4,
-        3,
-        4,
-        1,
-        5,
         2,
-        5,
-        3,
-        1,
-        4
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
       ]
     },
     {
@@ -132,16 +132,16 @@ module.exports = [
       "name": "Larry",
       "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend9.jpg",
       "scores": [
+        4,
+        3,
+        4,
+        1,
+        5,
         2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
+        5,
+        3,
+        1,
+        4
       ]
     },
     {
