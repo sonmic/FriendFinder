@@ -111,14 +111,14 @@ a:visited {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #fff;
+    background-color: #fae9ea;
     color: #e7252b;
     cursor: pointer;
     padding: 15px;
-    /* border-radius: 4px; */
 }
 
+a:hover,
 #topBtn:hover {
-    background-color: #ffeeee;
+    opacity: 0.5;
 }
   /* End of top button */
