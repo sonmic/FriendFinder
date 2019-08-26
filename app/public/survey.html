@@ -17,7 +17,11 @@
      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
      crossorigin="anonymous">
-
+     <script
+     src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+     integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+     crossorigin="anonymous"
+   ></script>
 
     <!-- Linking CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -43,196 +47,209 @@
 
   <body>
 
-      <div class="go"> <a href="/" class="onHover">&nbsp;&nbsp;<img src="assetes/left.png">&nbsp;HOME</a> </div>
-
-    <div class="surveyContainer">
-      <div class="headline">Survey Questions</div>
-      <div class="aboutYou">About You</div>
-      <form id="answers">
-        <div class="form-group bmd-form-group">
-          <!-- manually specified -->
-          <i class="fa fa-user"></i><label for="nameInput" class="bmd-label-floating"
-            >Your Name (Required)</label>
-          <input
-            type="text"
-            class="form-control"
-            name="name"
-            id="nameInput"
-            required="required"/>
-        </div>
-        <div class="form-group bmd-form-group">
-          <!-- manually specified -->
-          <i class="fa fa-camera"></i><label for="destinationInput" class="bmd-label-floating"
-            >Link to Photo Image (Required)</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            name="link"
-            id="photoUrl"
-            required="required"
-          />
-        </div>
-        <div class="scale">Example - 1: Strongly disagree ... 5: Strongly Agree.</div>
-<div class="qContainer">
-        <div class="q1">
-          <p>Is cereal soup?</p>
-          <select id="q1" name="q1" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q2">
-          <p>Is a hotdog a sandwich?</p>
-          <select id="q2" name="q2" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q3">
-          <p>Is chess a sport?</p>
-          <select id="q3" name="q3" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q4">
-          <p>Is the spring the best season?</p>
-          <select id="q4" name="q4" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q5">
-          <p>Do you have free will?</p>
-          <select id="q5" name="q5" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q6">
-          <p>Are race car drivers athletes?</p>
-          <select id="q6" name="q6" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q7">
-          <p>Is cheesecake actually cheese pie?</p>
-          <select id="q7" name="q7" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q8">
-          <p>If tomatoes are fruit, is ketchup a smoothie?</p>
-          <select id="q8" name="q8" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q9">
-          <p>Are poptarts ravioli?</p>
-          <select id="q9" name="q9" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div class="q10">
-          <p>Is water wet?</p>
-          <select id="q10" name="q10" class="question">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <br>
-        <div class="submit">
-                <button type="submit" class="btn submit">Submit <img src="assetes/submit.png"> </button>
-              </div>
-      
-             
-            </form>
-    </div>
-       
-    </div>
-    <div class="modal" tabindex="-1" role="dialog" id="popup">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Your new best friend is:</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
+        <div class="go"> <a href="/" class="onHover">&nbsp;&nbsp;<img src="assetes/left.png">&nbsp;HOME</a> </div>
+  
+      <div class="surveyContainer">
+        <div class="headline">Survey Questions</div>
+        <div class="aboutYou">About You</div>
+        <form id="answers">
+          <div class="form-group bmd-form-group">
+            <!-- manually specified -->
+            <i class="fa fa-user"></i><label for="nameInput" class="bmd-label-floating"
+              >Your Name (Required)</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="nameInput"
+              required="required"/>
+          </div>
+          <div class="form-group bmd-form-group">
+            <!-- manually specified -->
+            <i class="fa fa-camera"></i><label for="destinationInput" class="bmd-label-floating"
+              >Link to Photo Image (Required)</label
             >
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <input
+              type="text"
+              class="form-control"
+              name="link"
+              id="photoUrl"
+              required="required"
+            />
           </div>
-          <div class="modal-body">
-            Name:
-            <div id="friendName"></div>
-            Photo:
-            <img id="friendPhoto" />
+          <div class="scale">Example - 1: Strongly disagree ... 5: Strongly Agree.</div>
+  <div class="qContainer">
+          <div class="q1">
+            <p>Is cereal soup?</p>
+            <select id="q1" name="q1" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close
-            </button>
+          <div class="q2">
+            <p>Is a hotdog a sandwich?</p>
+            <select id="q2" name="q2" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q3">
+            <p>Is chess a sport?</p>
+            <select id="q3" name="q3" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q4">
+            <p>Is the spring the best season?</p>
+            <select id="q4" name="q4" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q5">
+            <p>Do you have free will?</p>
+            <select id="q5" name="q5" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q6">
+            <p>Are race car drivers athletes?</p>
+            <select id="q6" name="q6" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q7">
+            <p>Is cheesecake actually cheese pie?</p>
+            <select id="q7" name="q7" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q8">
+            <p>If tomatoes are fruit, is ketchup a smoothie?</p>
+            <select id="q8" name="q8" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q9">
+            <p>Are poptarts ravioli?</p>
+            <select id="q9" name="q9" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="q10">
+            <p>Is water wet?</p>
+            <select id="q10" name="q10" class="question">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <br><br>
+          <div class="submit">
+                  <button type="submit" class="btn submit">Submit <img src="assetes/submit.png"> </button>
+                </div>
+        
+               
+              </form>
+      </div>
+         
+      </div>
+      <div class="modal" tabindex="-1" role="dialog" id="popup">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your new best friend is:</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="friendNameContainer">
+                    <div class="friendNameL">Name: &nbsp;</div>    
+                        <div class="friendNameR" id="friendName"></div>
+
+                </div>
+             
+                <div class="friendPicContainer">
+                        <div class="friendPicL">Photo: &nbsp;</div>    
+                        <img id="friendPicR"/>
+    
+                    </div>
+             
+                    
+    
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary text-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-   
-    <button onclick="topFunction()" id="topBtn" title="Go to top">
-      <img src="assetes/up.png">
-    </button>
-    <script type="text/javascript" src="app.js"></script>
-
-     <!-- Linking Material Design BootstrapJS -->
-    <script
-    src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-    crossorigin="anonymous"></script>
-
-
-        <!-- Initializing Material Design Bootstrap -->
-
-    <script>
-            $(document).ready(function() {
-              $("body").bootstrapMaterialDesign();
-            });
-          </script>
-
-  </body>
-</html>
+     
+      <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <img src="assetes/up.png">
+      </button>
+      <script type="text/javascript" src="app.js"></script>
+  
+       <!-- Linking Material Design BootstrapJS -->
+      <script
+      src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+      crossorigin="anonymous"></script>
+  
+  
+          <!-- Initializing Material Design Bootstrap -->
+  
+      <script>
+              $(document).ready(function() {
+                $("body").bootstrapMaterialDesign();
+              });
+            </script>
+  
+    </body>
+  </html>
+  

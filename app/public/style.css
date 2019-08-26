@@ -1,8 +1,7 @@
 /* 
 font-family: 'Abel', sans-serif;
-font-family: 'Bubbler One', sans-serif;
-font-family: 'Notable', sans-serif;
 font-family: 'Syncopate', sans-serif;
+    font-family: 'Gruppo', cursive;
 font-family: 'Julius Sans One', sans-serif; 
 */
 .title {
@@ -64,6 +63,10 @@ button.submit{
     font-size: 20px;
 }
 
+.friendPicContainer,
+.friendNameContainer{
+    display: flex;
+}
 
 i{
     color:#aeaeae;
@@ -108,9 +111,9 @@ a:visited {
 }
 
 
-  /* top button */
+   /* top button */
         
-  #topBtn {
+   #topBtn {
     display: none;
     position: fixed;
     bottom: 20px;
