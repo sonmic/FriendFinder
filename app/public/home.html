@@ -20,7 +20,7 @@
 
     <!-- Linking CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="themes/bars-pill.css">
+    <link rel="stylesheet" type="text/css" href="assetes/bars-pill.css">
 
     <!-- Linking Google Fonts -->
     <link
@@ -29,6 +29,8 @@
      
     <!-- Linking jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     <!-- Linking jQuery UI-->
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
 </head>
 
@@ -36,14 +38,21 @@
     <div class="container">
 
         <div class="title">
-            <div class="meanLink"><a href="survey"> Friend Finder</a><img class="mean" src="meangirl.jpg" height="200" width="350" /></div>
+            <div class="meanLink">Friend Finder<img class="mean" src="assetes/meangirl.jpg" height="200" width="350" /></div>
         </div>
         <p class="desc">Answer a few basic questions. <br> Then find the friend with the greatest compatibility! </p>
-        
-        <div class="go"> <a href="survey" class="onHover">GO TO SURVEY</div></a>
+        <br>
+        <div class="go" id="toSurvey"> <a href="survey" class="onHover"> <span class="toSurvey"> GO TO SURVEY</span>&nbsp;<img src="assetes/right.png"></div></a>
     </div>
 
     <script>
+
+$(document).ready(function() {
+
+$("#toSurvey").effect("slide", { times: 1 }, 1000);
+
+});
+
        $(".meanLink").on("mouseenter mousemove", function(e) {
             $(".mean").css("top", e.clientY + 15);
             $(".mean").css("left", e.clientX + 15);

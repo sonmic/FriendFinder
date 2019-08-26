@@ -48,13 +48,16 @@ body {
     font-size: 30px;
 }
 .aboutYou{
-    font-size: 30px;
+    font-size: 40px;
 }
 .scale{
     font-size: 15px;
     color: #a2a2a2;
 }
 
+.toSurvey{
+    vertical-align: baseline !important;
+}
 
 .go,
 button.submit{
