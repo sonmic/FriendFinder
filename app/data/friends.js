@@ -1,7 +1,7 @@
 module.exports = [
     {
       "name": "Ahmed",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend1.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend1.jpg",
       "scores": [
         5,
         1,
@@ -17,7 +17,7 @@ module.exports = [
     },
     {
       "name": "Jacob Deming",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend2.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend2.jpg",
       "scores": [
         4,
         2,
@@ -33,7 +33,7 @@ module.exports = [
     },
     {
       "name": "Stella Scanlon",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend3.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend3.jpg",
       "scores": [
         5,
         2,
@@ -49,7 +49,7 @@ module.exports = [
     },
     {
       "name": "Louis T. Delia",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend4.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend4.jpg",
       "scores": [
         3,
         3,
@@ -65,7 +65,7 @@ module.exports = [
     },
     {
       "name": "April Ritter",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend5.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend5.jpg",
       "scores": [
         4,
         3,
@@ -81,7 +81,7 @@ module.exports = [
     },
     {
       "name": "Sophie Biason",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend6.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend6.jpg",
       "scores": [
         4,
         4,
@@ -97,7 +97,7 @@ module.exports = [
     },
     {
       "name": "Mike Smith",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend7.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend7.jpg",
       "scores": [
         5,
         2,
@@ -113,7 +113,7 @@ module.exports = [
     },
     {
       "name": "Calvin Smith",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend8.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend8.jpg",
       "scores": [
         2,
         4,
@@ -130,7 +130,7 @@ module.exports = [
     
     {
       "name": "Larry",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend9.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend9.jpg",
       "scores": [
         1,
         1,
@@ -146,7 +146,7 @@ module.exports = [
     },
     {
       "name": "BigGigantic",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend10.jpg",
+      "photo":"https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend10.jpg",
       "scores": [
         4,
         5,
@@ -163,7 +163,7 @@ module.exports = [
     
     {
       "name": "Franklin",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend11.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend11.jpg",
       "scores": [
         5,
         3,
@@ -179,7 +179,7 @@ module.exports = [
     },
     {
       "name": "Julia Bootcamp",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend12.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend12.jpg",
       "scores": [
         2,
         4,
@@ -195,7 +195,7 @@ module.exports = [
     },
     {
       "name": "Ryan",
-      "photo": "https:\/\/github.com\/sonmic\/FriendFinder\/blob\/master\/app\/public\/assetes\/friend13.jpg",
+      "photo": "https:\/\/raw.githubusercontent.com\/sonmic\/FriendFinder\/master\/app\/public\/assetes\/friend13.jpg",
       "scores": [
         2,
         2,
