@@ -11,6 +11,6 @@ The application is implemented using a Node.js and Express server on the back en
 Link: https://cryptic-reaches-16237.herokuapp.com/
 
 
-![](app/public/assets/HomeScreenshot.png)
-![](app/public/assets/SurveyScreenshot.png)
-![](app/public/assets/FriendScreenshot.png)
+![](app/public/assetes/HomeScreenshot.png)
+![](app/public/assetes/SurveyScreenshot.png)
+![](app/public/assetes/FriendScreenshot.png)
