@@ -45,6 +45,9 @@ body {
     left: -500px;
 }
 
+p{
+    margin-bottom: 5% !important;
+}
 
 .headline{
     font-size: 30px;
@@ -54,7 +57,8 @@ body {
 }
 .scale{
     font-size: 15px;
-    color: #a2a2a2;
+    color: #ef6b80;
+    text-align: right;
 }
 
 .toSurvey{
