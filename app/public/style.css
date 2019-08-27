@@ -147,13 +147,14 @@ a.onHover:hover,
  #topBtn{
     width: 40px;
     background-color: transparent;
+    padding-right: 10%;
   }
   .container {
     padding-top: 0%;
 }
 
 .surveyContainer{
-    width:80%;
+    width:85%;
     margin: auto;
 }
 
