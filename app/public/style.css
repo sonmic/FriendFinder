@@ -141,3 +141,32 @@ a.onHover:hover,
     opacity: 0.5;
 }
   /* End of top button */
+
+
+  @media only screen and (max-width: 600px) {
+ #topBtn{
+    width: 40px;
+  }
+  .container {
+    padding-top: 0%;
+}
+
+.surveyContainer{
+    width:80%;
+    margin: auto;
+}
+
+p{
+    margin-bottom: 7% !important;
+}
+
+.headline{
+    font-size: 20px;
+    text-align: right;
+}
+.aboutYou{
+    font-size: 30px;
+    text-align: right;
+}
+
+  }
