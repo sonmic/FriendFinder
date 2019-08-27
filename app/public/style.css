@@ -147,7 +147,7 @@ a.onHover:hover,
  #topBtn{
     width: 40px;
     background-color: transparent;
-    padding-right: 10%;
+    padding-right: 6%;
   }
   .container {
     padding-top: 0%;
@@ -174,5 +174,10 @@ p{
 .title{
     margin-top: 40%;
     font-size: 40px;
+}
+
+img.mean{
+    height: 150px;
+    width: 260px;
 }
   }
